@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт — Задание 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<header class="site-header">
+    <nav class="site-nav py-1">
+    <div class="container nav-inner d-flex flex-column flex-md-row justify-content-center align-items-stretch align-items-md-center">
+        <a href="#links">Список гиперссылок</a>
+        <a href="#table">Таблица</a>
+        <a href="#form">Форма</a>
+    </div>
+</nav>
+    
+    <div class="container header-inner d-flex flex-column flex-md-row align-items-center py-3 py-md-4">
+        <a href="/" class="logo-link">
+            <img src="logo.png" alt="Логотип сайта" class="logo">
+        </a>
+        <h1>Web-Swag</h1>
+    </div>
+</header>
+
+<main class="container py-3 py-md-4">
+    <div class="row">
+        <div class="col-12">
+
+<section id="links" class="mb-4">
+<h2>Список гиперссылок</h2>
+
+<p>1) <a href="https://kubsu.ru">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></p>
+<p>2) <a href="https://kubsu.ru/">абсолютную на главную сайта kubsu.ru в протоколе https</a></p>
+
+<p>3)
+<a href="https://google.com">
+<img src="image.png" alt="Google" width="200" height="120">
+</a> — ссылка-изображение</p>
+
+<p>4) <a href="/about">сокращенную ссылку на внутреннюю страницу</a></p>
+<p>5) <a href="/">сокращенную ссылку на главную страницу</a></p>
+<p>6) <a href="#top">Ссылка на фрагмент текущей страницы (наверх)</a></p>
+<p>7) <a href="https://kubsu.ru/?param1=value1&amp;param2=value2&amp;param3=value3">Ссылка с тремя параметрами в URL</a></p>
+<p>8) <a href="https://kubsu.ru/page.html1?id=123">ссылка с параметром id в URL</a></p>
+<p>9) <a href="current.html">относительную на страницу в текущем каталоге</a></p>
+<p>10) <a href="about/about.html">относительную на страницу в каталоге about</a></p>
+<p>11) <a href="../index.html">относительную на страницу в каталоге уровнем выше текущего</a></p>
+<p>12) <a href="../../index.html">относительную на страницу в каталоге двумя уровнями выше</a></p>
+
+<p>13) Контекстная ссылка в тексте абзаца:
+Подробнее о вузе можно узнать на <a href="https://kubsu.ru/">официальном сайте КубГУ</a>, там есть вся информация.</p>
+
+<p>14) <a href="https://ru.wikipedia.org/wiki/HTML#История">ссылка на фрагмент страницы стороннего сайта</a></p>
+
+<p>15) Ссылки из прямоугольной и круглой областей картинки:
+<br>
+<img src="image.png" alt="Карта ссылок" width="240" height="120" usemap="#kubsu-map">
+</p>
+
+<map name="kubsu-map">
+    <area shape="rect" coords="0,0,120,120" href="https://kubsu.ru" alt="Прямоугольная область">
+    <area shape="circle" coords="180,60,55" href="https://google.com" alt="Круглая область">
+</map>
+
+<p>16) <a href="">ссылка с пустым href</a></p>
+<p>17) <a>Ссылка без href</a></p>
+<p>18) <a href="https://kubsu.ru/" rel="nofollow">ссылка, по которой запрещён переход поисковикам</a></p>
+
+<p>19)
+<!--noindex--><a href="https://kubsu.ru/">ссылка, запрещённая для индексации поисковиками</a><!--/noindex-->
+</p>
+
+<p>20) Нумерованный список ссылок с подписями title:</p>
+<ol>
+    <li><a href="https://kubsu.ru/" title="Главная страница КубГУ">КубГУ</a></li>
+    <li><a href="https://ya.ru/" title="Яндекс">Яндекс</a></li>
+    <li><a href="https://ru.wikipedia.org/" title="Википедия">Википедия</a></li>
+</ol>
+
+<p>21) <a href="ftp://user:password@ftp.kubsu.ru/file.zip">ссылка на файл на FTP-сервере с авторизацией</a></p>
+</section>
+
+
+<section id="table" class="mb-4">
+<h2>Таблица</h2>
+
+<div class="table-responsive"><table class="data-table table table-bordered table-striped mb-0">
+<caption>Учебные дисциплины</caption>
+<thead>
+<tr>
+    <th>№</th>
+    <th>Дисциплина</th>
+    <th>Преподаватель</th>
+    <th>Аудитория</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td>Веб-разработка</td>
+    <td>Сергей Синица</td>
+    <td>301</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Программирование</td>
+    <td>Шестаков А. А.</td>
+    <td>302</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Базы данных</td>
+    <td>Иванов И. И.</td>
+    <td>303</td>
+</tr>
+<tr>
+    <td rowspan="2">4</td>
+    <td>Математика</td>
+    <td>Петров П. П.</td>
+    <td>204</td>
+</tr>
+<tr>
+    <td>Физика</td>
+    <td>Сидоров С. С.</td>
+    <td>205</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Операционные системы</td>
+    <td>Кузнецов А. А.</td>
+    <td>306</td>
+</tr>
+    </tbody>
+</table></div>
+</section>
+
+    <section id="form" class="mb-4">
+<h2>Форма</h2>
+
+<form action="/save" method="post" id="myForm">
+
+<p>
+<label for="fio">1. ФИО:</label><br>
+<input type="text" id="fio" name="fio" required
+pattern="[А-Яа-яЁёA-Za-z\s\-]+"
+title="Только буквы, пробел и дефис. Цифры нельзя." class="form-control">
+</p>
+
+<p>
+<label for="phone">2. Телефон:</label><br>
+<input type="tel" id="phone" name="phone" required
+pattern="\+?[0-9\s\-\(\)]{7,18}"
+title="Только цифры и символы + - ( ). От 7 до 18 символов." class="form-control">
+</p>
+
+<p>
+<label for="email">3. E-mail:</label><br>
+<input type="email" id="email" name="email" required class="form-control">
+</p>
+
+<p>
+<label for="birthdate">4. Дата рождения:</label><br>
+<input type="date" id="birthdate" name="birthdate" required class="form-control">
+</p>
+
+<p class="mb-2">5. Пол:</p>
+<p>
+<label><input type="radio" name="gender" value="male" required> Мужской</label>
+<label><input type="radio" name="gender" value="female"> Женский</label>
+</p>
+
+<p class="mb-2">6. Любимый язык программирования:</p>
+<p>
+<label><input type="checkbox" name="lang[]" value="Pascal"> Pascal</label>
+<label><input type="checkbox" name="lang[]" value="C"> C</label>
+<label><input type="checkbox" name="lang[]" value="C++"> C++</label>
+<label><input type="checkbox" name="lang[]" value="JavaScript"> JavaScript</label>
+<label><input type="checkbox" name="lang[]" value="PHP"> PHP</label>
+<label><input type="checkbox" name="lang[]" value="Python"> Python</label>
+<label><input type="checkbox" name="lang[]" value="Java"> Java</label>
+<label><input type="checkbox" name="lang[]" value="Haskell"> Haskell</label>
+<label><input type="checkbox" name="lang[]" value="Clojure"> Clojure</label>
+<label><input type="checkbox" name="lang[]" value="Prolog"> Prolog</label>
+<label><input type="checkbox" name="lang[]" value="Scala"> Scala</label>
+<span id="lang-error">Выберите хотя бы один язык!</span>
+</p>
+
+<p>
+<label for="bio">7. Биография:</label><br>
+<textarea id="bio" name="bio" rows="6" class="form-control" required></textarea>
+</p>
+
+<p>
+<label>
+<input type="checkbox" name="contract" value="yes" required>
+8. С контрактом ознакомлен(а)
+</label>
+</p>
+
+<p><button type="submit" class="btn btn-primary">9. Сохранить</button></p>
+</form>
+</section>
+
+<p class="back-top"><a href="#top">↑ Наверх</a></p>
+</main>
+
+<footer class="site-footer">
+<div class="container py-3 text-center">
+<p class="mb-0">© 2026 Мой сайт</p>
+</div>
+</footer>
+
+<script>
+const birthdate = document.getElementById("birthdate");
+const form = document.getElementById("myForm");
+const langError = document.getElementById("lang-error");
+
+birthdate.max = new Date().toISOString().split("T")[0];
+
+form.addEventListener("submit", function (e) {
+    const langs = document.querySelectorAll('input[name="lang[]"]:checked');
+
+    if (langs.length === 0) {
+        langError.style.display = "inline";
+        e.preventDefault();
+        return;
+    }
+
+    langError.style.display = "none";
+
+    const today = new Date().toISOString().split("T")[0];
+
+    if (birthdate.value > today) {
+        birthdate.setCustomValidity("Дата рождения не может быть в будущем");
+        birthdate.reportValidity();
+        e.preventDefault();
+    } else {
+        birthdate.setCustomValidity("");
+    }
+});
+</script>
+
+</body>
+</html>
